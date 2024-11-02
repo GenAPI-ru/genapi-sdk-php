@@ -56,7 +56,7 @@ class Client extends BaseClient
     {
         $body = $this->encodeData($parameters);
 
-        $response = $this->execute(EndpointsEnum::CREATE_NETWORK_TASK_PATH . '/' . $networkId, HttpMethods::POST, [], $body);
+        $response = $this->execute(EndpointsEnum::CREATE_NETWORK_TASK_PATH . DIRECTORY_SEPARATOR . $networkId, HttpMethods::POST, [], $body);
 
         return $response->isOk()
             ? $this->decodeData($response)
@@ -90,7 +90,7 @@ class Client extends BaseClient
         $this->client = new SseClient($this->client);
         $body = $this->encodeData($parameters);
 
-        $response = $this->execute(EndpointsEnum::CREATE_NETWORK_TASK_PATH . '/' . $networkId, HttpMethods::POST, [], $body, [], $callback);
+        $response = $this->execute(EndpointsEnum::CREATE_NETWORK_TASK_PATH . DIRECTORY_SEPARATOR . $networkId, HttpMethods::POST, [], $body, [], $callback);
 
         return $response->isOk()
             ?: $this->handleError($response);
@@ -113,7 +113,7 @@ class Client extends BaseClient
      */
     public function getRequest(int $requestId): ?array
     {
-        $response = $this->execute(EndpointsEnum::GET_REQUEST_PATH . '/' . $requestId, HttpMethods::GET, []);
+        $response = $this->execute(EndpointsEnum::GET_REQUEST_PATH . DIRECTORY_SEPARATOR . $requestId, HttpMethods::GET, []);
 
         return $response->isOk()
             ? $this->decodeData($response)
@@ -140,7 +140,7 @@ class Client extends BaseClient
     {
         $body = $this->encodeData($parameters);
 
-        $response = $this->execute(EndpointsEnum::CREATE_FUNCTION_TASK_PATH . '/' . $functionId, HttpMethods::POST, [], $body);
+        $response = $this->execute(EndpointsEnum::CREATE_FUNCTION_TASK_PATH . DIRECTORY_SEPARATOR . $functionId, HttpMethods::POST, [], $body);
 
         return $response->isOk()
             ? $this->decodeData($response)
