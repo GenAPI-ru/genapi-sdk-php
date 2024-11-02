@@ -2,3 +2,5 @@
 /.fleet
 /.idea
 /.vscode
+composer.lock
+phpunit.xml

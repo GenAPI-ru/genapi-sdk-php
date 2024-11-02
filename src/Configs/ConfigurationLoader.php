@@ -1,6 +1,6 @@
 <?php
 
-namespace GenAPI\Config;
+namespace GenAPI\Configs;
 
 use GenAPI\Contracts\Config\ConfigurationLoaderContract;
 

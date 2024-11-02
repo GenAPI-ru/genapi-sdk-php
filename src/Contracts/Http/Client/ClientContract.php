@@ -25,4 +25,12 @@ interface ClientContract
      * @return void
      */
     public function setBearerToken(string $bearerToken): void;
+
+    /**
+     * Config Setter.
+     *
+     * @param array $config
+     * @return void
+     */
+    public function setConfig(array $config): void;
 }

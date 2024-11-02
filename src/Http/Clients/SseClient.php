@@ -1,6 +1,6 @@
 <?php
 
-namespace GenAPI\Http\Client;
+namespace GenAPI\Http\Clients;
 
 use CurlHandle;
 use GenAPI\Contracts\Http\Client\ClientContract;

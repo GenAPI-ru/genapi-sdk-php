@@ -1,8 +1,8 @@
 <?php
 
-namespace GenAPI\Http\Client;
+namespace GenAPI\Http\Clients;
 
-use GenAPI\Config\ConfigurationLoader;
+use GenAPI\Configs\ConfigurationLoader;
 use GenAPI\Contracts\Config\ConfigurationLoaderContract;
 use GenAPI\Contracts\Http\Client\ClientContract;
 use GenAPI\Enums\Http\HttpErrorsEnum;
@@ -81,11 +81,24 @@ class BaseClient
      * Set Curl Client.
      *
      * @param ClientContract $client
-     * @return void
+     * @return BaseClient
      */
-    public function setClient(ClientContract $client): void
+    public function setClient(ClientContract $client): self
     {
         $this->client = $client;
+        $this->client->setConfig($this->config);
+
+        return $this;
+    }
+
+    /**
+     * Client Getter.
+     *
+     * @return ClientContract
+     */
+    public function getClient(): ClientContract
+    {
+        return $this->client;
     }
 
     /**

@@ -11,8 +11,8 @@ use GenAPI\Exceptions\NotFoundException;
 use GenAPI\Exceptions\StreamParameterNotSetException;
 use GenAPI\Exceptions\TooManyRequestsException;
 use GenAPI\Exceptions\UnauthorizedException;
-use GenAPI\Http\Client\BaseClient;
-use GenAPI\Http\Client\SseClient;
+use GenAPI\Http\Clients\BaseClient;
+use GenAPI\Http\Clients\SseClient;
 use JsonException;
 
 class Client extends BaseClient

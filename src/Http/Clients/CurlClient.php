@@ -1,6 +1,6 @@
 <?php
 
-namespace GenAPI\Http\Client;
+namespace GenAPI\Http\Clients;
 
 use CurlHandle;
 use GenAPI\Contracts\Http\Client\ClientContract;
@@ -95,9 +95,57 @@ class CurlClient implements ClientContract
     {
         $this->bearerToken = $bearerToken;
     }
+
+    /**
+     * Bearer Token Getter.
+     *
+     * @return string
+     */
     public function getBearerToken(): string
     {
         return $this->bearerToken;
+    }
+
+    /**
+     * ConnectionTimeout Getter.
+     *
+     * @return int
+     */
+    public function getConnectionTimeout(): int
+    {
+        return $this->connectionTimeout;
+    }
+
+    /**
+     * ConnectionTimeout Setter.
+     *
+     * @param int $connectionTimeout
+     * @return void
+     */
+    public function setConnectionTimeout(int $connectionTimeout): void
+    {
+        $this->connectionTimeout = $connectionTimeout;
+    }
+
+    /**
+     * Timeout Getter.
+     *
+     * @return int
+     */
+    public function getTimeout(): int
+    {
+        return $this->timeout;
+    }
+
+    /**
+     * Timeout Setter.
+     *
+     * @param int $timeout
+     * @return void
+     */
+    public function setTimeout(int $timeout): void
+    {
+        $this->timeout = $timeout;
     }
 
     /**
