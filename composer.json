@@ -1,0 +1,37 @@
+{
+    "name": "generative/genapi-sdk-php",
+    "description": "This is a developer tool for integration with GenAPI.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "genapi",
+        "ai",
+        "api",
+        "sdk"
+    ],
+    "authors": [
+        {
+            "name": "GenAPI",
+            "email": "gen-api@gen-api.ru"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GenAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\GenAPI\\": "tests/"
+        }
+    }
+}
