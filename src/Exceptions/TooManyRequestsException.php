@@ -7,7 +7,7 @@ class TooManyRequestsException extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 429;
+    public const HTTP_CODE = 429;
 
     /**
      * TooManyRequestsException constructor.

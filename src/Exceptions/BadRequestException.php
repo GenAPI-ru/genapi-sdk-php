@@ -7,7 +7,7 @@ class BadRequestException extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 400;
+    public const HTTP_CODE = 400;
 
     /**
      * BadRequestException constructor.

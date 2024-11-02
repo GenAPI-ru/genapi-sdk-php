@@ -7,7 +7,7 @@ class UnprocessableEntityException extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 422;
+    public const HTTP_CODE = 422;
 
     /**
      * BadRequestException constructor.

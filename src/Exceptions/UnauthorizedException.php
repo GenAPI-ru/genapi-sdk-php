@@ -7,7 +7,7 @@ class UnauthorizedException extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 401;
+    public const HTTP_CODE = 401;
 
     /**
      * UnauthorizedException constructor.

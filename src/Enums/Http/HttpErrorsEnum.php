@@ -7,42 +7,42 @@ enum HttpErrorsEnum: string
     /**
      * Not Found HTTP Error.
      */
-    public const string HTTP_NOT_FOUND = 'Resource not found. Check the path is correct.';
+    public const HTTP_NOT_FOUND = 'Resource not found. Check the path is correct.';
 
     /**
      * Bad Request HTTP Error.
      */
-    public const string HTTP_BAD_REQUEST = 'Invalid request.';
+    public const HTTP_BAD_REQUEST = 'Invalid request.';
 
     /**
      * Unauthorized HTTP Error.
      */
-    public const string HTTP_UNAUTHORIZED = 'Unauthorized. Check Auth token.';
+    public const HTTP_UNAUTHORIZED = 'Unauthorized. Check Auth token.';
 
     /**
      * Internal HTTP Error.
      */
-    public const string HTTP_INTERNAL_SERVER_ERROR = 'Internal Error. Try again later or write to technical support.';
+    public const HTTP_INTERNAL_SERVER_ERROR = 'Internal Error. Try again later or write to technical support.';
 
     /**
      * Too Many Requests HTTP Error.
      */
-    public const string HTTP_TOO_MANY_REQUESTS = 'Too many requests, slow down.';
+    public const HTTP_TOO_MANY_REQUESTS = 'Too many requests, slow down.';
 
     /**
      * Unprocessable Entity HTTP Error.
      */
-    public const string HTTP_UNPROCESSABLE_ENTITY = 'Validation error, check request parameters.';
+    public const HTTP_UNPROCESSABLE_ENTITY = 'Validation error, check request parameters.';
 
     /**
      * Method Not Allowed HTTP Error.
      */
-    public const string HTTP_METHOD_NOT_ALLOWED = 'Invalid method for this endpoint.';
+    public const HTTP_METHOD_NOT_ALLOWED = 'Invalid method for this endpoint.';
 
     /**
      * Unknown HTTP Error.
      */
-    public const string UNKNOWN_ERROR = 'Unknown error.';
+    public const UNKNOWN_ERROR = 'Unknown error.';
 
     /**
      * Related error message based on HTTP code.

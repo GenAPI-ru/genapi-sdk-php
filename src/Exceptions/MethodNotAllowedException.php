@@ -7,7 +7,7 @@ class MethodNotAllowedException extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 405;
+    public const HTTP_CODE = 405;
 
     /**
      * BadRequestException constructor.

@@ -7,7 +7,7 @@ class InternalServerError extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 500;
+    public const HTTP_CODE = 500;
 
     /**
      * InternalServerError constructor.

@@ -7,10 +7,10 @@ enum HttpMethods
     /**
      * GET HTTP Method.
      */
-    public const string GET = 'GET';
+    public const GET = 'GET';
 
     /**
      * POST HTTP Method.
      */
-    public const string POST = 'POST';
+    public const POST = 'POST';
 }

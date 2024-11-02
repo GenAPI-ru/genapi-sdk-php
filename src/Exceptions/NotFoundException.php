@@ -7,7 +7,7 @@ class NotFoundException extends BaseException
     /**
      * Exception HTTP code.
      */
-    public const int HTTP_CODE = 404;
+    public const HTTP_CODE = 404;
 
     /**
      * NotFoundException constructor.
