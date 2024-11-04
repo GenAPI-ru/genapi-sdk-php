@@ -1,12 +1,14 @@
-# PHP-библиотека клиента для GenAPI
+<p align="center"><a href="https://gen-api.ru" target="_blank"><img src="https://api.gen-api.ru/storage/logo.svg" width="200" alt="GenAPI Logo"></a></p>
 
-// кнопки
-
-PHP-библиотека для интеграции с [GenAPI](https://gen-api.ru/).
+<p align="center">
+<a href="https://packagist.org/packages/generative/genapi-sdk-php"><img src="https://img.shields.io/packagist/php-v/generative/genapi-sdk-php" alt="PHP Version"></a>
+<a href="https://packagist.org/packages/generative/genapi-sdk-php"><img src="https://img.shields.io/packagist/v/generative/genapi-sdk-php?label=stable" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/generative/genapi-sdk-php"><img src="https://img.shields.io/packagist/l/generative/genapi-sdk-php" alt="License"></a>
+</p>
 
 ## Требования
 
-- PHP версии 8.3 или выше с установленным расширением `libcurl`.
+- PHP версии 8.1 или выше с установленным расширением `libcurl`.
 
 ## Установка
 
@@ -26,7 +28,7 @@ PHP-библиотека для интеграции с [GenAPI](https://gen-api
     ```json
     {
         "require": {
-            "php": ">=8.3",
+            "php": ">=8.1",
             "generative/genapi-sdk-php": "^1.0"
         }
     }
